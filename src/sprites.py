@@ -1,3 +1,4 @@
+from random import randint
 import pygame
 from constants import *
 import numpy as np
@@ -109,7 +110,8 @@ class FruitSprites(Spritesheet):
         Spritesheet.__init__(self)
         self.entity = entity
         self.fruits = { 0: (16,8), 1: (18,8), 2: (20,8), 3: (16,10), 4: (18,10), 5: (20,10) }
-        self.entity.image = self.getStartImage(level % len(self.fruits))
+        self.entity.image = self.getStartImage(randint(0, 5))
+        # self.entity.image = self.getStartImage(level % len(self.fruits))
 
     def getStartImage(self, key):
         return self.getImage(*self.fruits[key])

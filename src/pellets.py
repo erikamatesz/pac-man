@@ -26,7 +26,7 @@ class PowerPellet(Pellet):
         self.radius = int(8 * TILEWIDTH / 16)
         self.points = 50
         self.flashTime = 0.2
-        self.timer= 0
+        self.timer = 0
         
     def update(self, dt):
         self.timer += dt
@@ -44,7 +44,8 @@ class PelletGroup(object):
     def update(self, dt):
         for powerpellet in self.powerpellets:
             powerpellet.update(dt)
-                
+    
+    # pelletfile is the maze file
     def createPelletList(self, pelletfile):
         data = self.readPelletfile(pelletfile)        
         for row in range(data.shape[0]):

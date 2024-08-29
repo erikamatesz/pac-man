@@ -7,16 +7,18 @@ from random import randint
 class Entity(object):
     def __init__(self, node):
         self.name = None
-        self.directions = {UP:Vector2D(0, -1),DOWN:Vector2D(0, 1), 
-                          LEFT:Vector2D(-1, 0), RIGHT:Vector2D(1, 0), STOP:Vector2D()}
+        self.directions = {
+            UP: Vector2D(0, -1),
+            DOWN: Vector2D(0, 1), 
+            LEFT: Vector2D(-1, 0), 
+            RIGHT: Vector2D(1, 0), 
+            STOP: Vector2D()
+        }
         self.direction = STOP
         self.setSpeed(100)
         self.radius = 10
         self.collideRadius = 5
         self.color = WHITE
-        # self.node = node
-        # self.setPosition()
-        # self.target = node
         self.visible = True
         self.disablePortal = False
         self.goal = None

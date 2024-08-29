@@ -62,14 +62,12 @@ class Ghost(Entity):
             self.directionMethod = self.goalDirection
             self.spawn()
 
-
 class Blinky(Ghost):
     def __init__(self, node, pacman=None, blinky=None):
         Ghost.__init__(self, node, pacman, blinky)
         self.name = BLINKY
         self.color = RED
         self.sprites = GhostSprites(self)
-
 
 class Pinky(Ghost):
     def __init__(self, node, pacman=None, blinky=None):
@@ -83,8 +81,6 @@ class Pinky(Ghost):
 
     def chase(self):
         self.goal = self.pacman.position + self.pacman.directions[self.pacman.direction] * TILEWIDTH * 4
-
-
 
 class Inky(Ghost):
     def __init__(self, node, pacman=None, blinky=None):

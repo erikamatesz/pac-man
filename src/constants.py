@@ -9,14 +9,14 @@ SCREENSIZE = (SCREENWIDTH, SCREENHEIGHT)
 WINDOWTITLE = "Erikão's Pacman"
 
 # maze path
-MAZEPATH = "src/maze.txt"
-ROTATIONPATH = "src/maze_rotation.txt"
+MAZEPATH = "src/assets/maze.txt"
+ROTATIONPATH = "src/assets/maze_rotation.txt"
 
 # font path
-FONTPATH = "./assets/PressStart2P-Regular.ttf"
+FONTPATH = "src/assets/PressStart2P-Regular.ttf"
 
 # sprits path
-SPRITEPATH = "./assets/spritesheet.png"
+SPRITEPATH = "src/assets/spritesheet.png"
 
 # directions
 STOP = 0

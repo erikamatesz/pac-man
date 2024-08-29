@@ -6,11 +6,19 @@ import numpy as np
 class Node(object):
     def __init__(self, x, y):
         self.position = Vector2D(x, y)
-        self.neighbors = { UP: None, DOWN: None, LEFT: None, RIGHT: None, PORTAL:None }
-        self.access = { UP:[PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
-                       DOWN:[PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
-                       LEFT:[PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
-                       RIGHT:[PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT] }
+        self.neighbors = { 
+            UP: None, 
+            DOWN: None, 
+            LEFT: None, 
+            RIGHT: None, 
+            PORTAL:None 
+        }
+        self.access = { 
+            UP: [PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
+            DOWN: [PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
+            LEFT: [PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT],
+            RIGHT:[PACMAN, BLINKY, PINKY, INKY, CLYDE, FRUIT] 
+        }
         
     def denyAccess(self, direction, entity):
         if entity.name in self.access[direction]:
