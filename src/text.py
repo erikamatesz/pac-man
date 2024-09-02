@@ -58,7 +58,7 @@ class TextGroup(object):
     def setupText(self):
         size = TILEHEIGHT
         self.alltext[SCORETXT] = Text("0".zfill(8), WHITE, 5, TILEHEIGHT + 8, size)
-        self.alltext[LEVELTXT] = Text(str(1).zfill(3), WHITE, 23*TILEWIDTH - 5, TILEHEIGHT + 8, size)
+        self.alltext[LEVELTXT] = Text(str(1).zfill(3), WHITE, 23*TILEWIDTH + 20, TILEHEIGHT + 8, size)
         self.alltext[READYTXT] = Text("READY!", YELLOW, 11.25*TILEWIDTH, 20*TILEHEIGHT, size, visible=False)
         self.alltext[PAUSETXT] = Text("PAUSED!", YELLOW, 10.625*TILEWIDTH, 20*TILEHEIGHT, size, visible=False)
         self.alltext[GAMEOVERTXT] = Text("GAME OVER!", YELLOW, 10*TILEWIDTH - 12, 20*TILEHEIGHT, size, visible=False)

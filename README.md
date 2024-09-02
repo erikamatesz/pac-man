@@ -1,8 +1,8 @@
-# Pac-Man
+# Pac-man
 
-Dedicated to the greatest Pac-Man player I've ever known... My mom! 🌟
+My implementation of [pacmancode.com](https://pacmancode.com/.com) just for fun :) 
 
-## Setup (MacOS)
+## Setup (MacOS / Linux)
 
 Create a venv:
 
@@ -27,3 +27,7 @@ If you need to deactivate the venv:
 ```sh
 deactivate
 ```
+
+---
+
+_Dedicated to the greatest Pac-man player I've ever known and the true owner of our first Atari... My mom! 🌟_
